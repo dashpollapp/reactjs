@@ -1,0 +1,569 @@
+* {
+	font-family: "Poppins", sans-serif, arial;
+	outline: none;
+	box-sizing: border-box;
+}
+::selection {
+	background-color: #b7d3e5;
+}
+
+
+body {
+	background: #fff;
+
+	background-size: center;
+	
+  padding: 8px;
+  
+  overflow-x: hidden;
+}
+
+
+
+
+h1 {
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0;
+
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 400;
+	padding-top: 44px;
+	margin: 0;
+}
+
+b {
+	font-weight: 500;
+	color: #2d3436;
+
+}
+
+p {
+	margin-top: 8px;
+	color: #5b5858;
+	font-size: 14px;
+}
+a { 
+	text-decoration: none ;
+}
+h3 {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: 500;
+	
+	margin: 0;
+	margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+.nav-top {
+	width: 100%;
+	height: 50px;
+	background: #2d3436;
+}
+.bar {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	
+}
+.answer .bar .inner {
+	background: linear-gradient(100deg, #968b8b, #726b6b);
+	height: 16px;
+	border-radius: 6px;
+
+	
+  transition: 0.4s;
+  
+  /*debug*/
+  min-width: 4px;
+
+}
+.answer.on .bar .inner {
+	background: linear-gradient(130deg, #e83e3e, #37a5e5);
+}
+
+.percent {
+	color: #6A6A6A;
+	font-size: 12px;
+	font-weight: 500;
+	
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.polltype *::selection {
+	background: transparent;
+}
+
+.answer {
+	transition: 0.3s;
+	border-radius: 8px;
+	margin-bottom: 4px;
+	margin-left: -8px;
+	width: calc(100% + 16px);
+	padding: 12px 12px;
+	cursor: pointer;
+
+}
+.answer:hover {
+	background-color: rgba(13,4,0,0.08)
+}
+
+.container {
+ 
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 720px;
+  padding: 8px;
+
+  box-sizing: border-box;
+}
+.container > * {
+  max-width: 100%;
+}
+
+.byDashpoll {
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	
+	background-color: rgba(255,255,255,0.85);
+	border: 2px solid #eee;
+	padding: 4px 8px;
+  border-radius: 4px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.byDashpoll span {
+	font-size: 15px;
+	font-weight: 600;
+	color: #443d3d;
+}
+.byDashpoll img {
+	height: 20px;
+	margin-left: 4px;
+}
+
+.author {
+	padding-bottom: 8px;	
+	display: flex;
+	align-items: center;	
+	justify-content: flex-start;
+	
+	margin-top: 32px;
+}	
+
+
+span.name {
+	font-size: 12px;
+	font-weight: 300;
+	margin: 0;
+}
+
+img.pb {
+	height: 52px;
+	width: 52px;
+	border-radius: 32px;
+	margin-right: 12px;
+}
+
+.spotify {
+	border-radius: 4px !important;
+	overflow: hidden !important;
+}
+.media {
+	margin-bottom: 12px;
+}
+
+.heart {
+	cursor: pointer;
+	height: 32px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.heart img {
+	height: 32px;
+}
+
+.youtube {
+	border-radius: 4px;
+	overflow: hidden;
+	
+	background-color: #D9D1D1;
+    width: 100%;
+    padding-top: 56.25%; /*16:9*/
+    position: relative;
+}
+.youtube iframe {
+	width: 100%    !important;
+	height: 100%   !important;
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.image {
+	border-radius: 4px !important;
+}
+
+.polltype {
+	margin-bottom: 8px;
+	margin-top: 24px;
+}
+
+
+
+.thumbs {
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+}
+.thumbs img {
+	height: 32px;
+}
+.thumbs .like {
+	
+}
+.thumbs .dislike {
+	
+}
+
+
+
+.hidden {
+	display: none !important;
+}
+
+.pleasLogin {
+	background-color: #000;
+	padding: 12px 16px;
+	border-radius: 12px;
+	margin-bottom: 16px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.pleasLogin *::selection {
+	background-color: transparent;
+	color: inherit;
+}
+
+
+.pleasLogin:hover { background-color: #222; }
+
+.pleasLogin:hover a {
+	text-decoration: underline;
+}
+.pleasLogin p {
+	padding: 0;
+	margin: 0;
+	color: #ddd;
+	font-size: 13px;
+}
+
+.pleasLogin p a {
+	color: #7cc4f4;
+	cursor: pointer;
+}
+
+.voteAmount {
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 0 2px;
+	border-radius: 4px;
+
+	margin-left: 4px;
+}
+.voteAmount span {
+	padding: 0px 5px;
+	margin: 0;
+	font-size: 10px;
+	color: #555;
+	font-weight: 300;
+}
+
+
+
+.store {
+	padding: 12px;
+	border-radius: 8px;
+	transition: 0.4s;
+	cursor: pointer;
+	width: 40%;
+}
+.store:hover {
+	background: rgba(0,0,0,0.1);
+}
+.store img {
+	width: 100%;
+}
+.stores {
+
+	display: flex;
+	justify-content: space-around;
+}
+
+h6 {
+	text-align: center;
+	padding: 32px 0 8px 0 ;
+}
+
+h1 {
+	font-weight: 600;
+}
+
+.moreAnswers {	
+	padding-top: 8px;
+	display: block;
+	color: #1773d6;
+	cursor: pointer;
+	font-weight: 500;
+	transition: 0.4s;
+}
+.moreAnswers:hover {	
+	color: #05478e;
+	margin-left: 4px;
+}
+
+.thumbs .vote {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.thumbs .like, .thumbs .dislike {
+	padding: 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.4s;
+
+	display: flex;
+	align-items: center;
+}
+.thumbs .like:hover, .thumbs .dislike:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+.thumbs .dislike img {
+	transform: rotate(180deg);
+}
+.thumbs .bar {
+	width: 100%;
+	height: 16px;
+	background: #eee;
+	border-radius: 4px;
+  margin: 8px 0;
+
+}
+.thumbs .bar .inner {
+	background: linear-gradient(130deg, #e83e3e, #37a5e5);
+	height: 16px;
+	border-radius: 6px;
+
+  transition: 0.4s;	
+  
+    /*debug*/
+    min-width: 4px;
+  
+
+}
+.thumbs  {
+	flex-direction: column;
+}
+
+
+
+
+
+
+
+/*================= <loader> ===============*/
+
+
+
+.loader .logo {
+	display: flex;
+	flex-direction: row;	
+	align-items: flex-end;
+	height: 80px;
+}
+
+.loader .logo .bar {
+	border-radius: 4px;
+	width: 20px;
+	margin: 2px;
+}
+
+
+.loader .logo .bar.blue {
+	background: #0F7FD5;
+	animation: loader-voting 6s infinite;
+}
+.loader .logo .bar.red {
+	background: #DE3947;
+	animation: loader-voting 5.6s infinite;
+}
+
+@keyframes loader-voting {
+    0%   {height: 40px;}
+    10%  {height: 10px;}
+    20%  {height: 50px;}
+	30%  {height: 12px;}
+	40%  {height: 50px;}
+	50%  {height: 25px; }
+	60%  {height: 20px;}
+	70%  {height: 40px;}
+    80%  {height: 30px;} 
+	90%  {height: 2px;}
+	100% {height: 40px;}
+}
+
+
+
+.loader .centerItem {
+	display: flex;
+	height: 85vh;
+	align-items: center;
+	justify-content: center;
+}
+/*================= </Loader> ===============*/
+
+
+
+
+/*================= <Law (Rechtliches)> ===============*/
+.law code {
+	background-color: #fdcb6e;
+	color: #9e3a3a;
+	padding: 2px 8px;
+	border-radius: 4px;
+
+	cursor: pointer;
+	transition: 0.2s;
+}
+.law code:hover {
+	background-color: #f7d9a0;
+	color: #3f0b0b;
+	padding: 2px 8px;
+	border-radius: 4px;
+}
+.law h3 {
+	font-weight: 400;
+	font-size: 18px;
+	color: #605a5a;
+	padding-top: 16px;
+}
+.law mark {
+	font-weight: 500;
+	background-color: transparent;
+	color: #222;
+}
+.container.law {
+	padding-top: 64px;
+}
+/*================= </Law (Rechtliches)> ===============*/
+
+
+
+
+
+/* index */
+.container.index {
+	padding-top: 64px;
+	text-align: center;
+}
+.index img {
+	width: 320px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+
+}
+.index h1 {
+	margin-top: 32px;
+}
+.index p {
+	font-size: 16px;
+}
+.index a {
+	display: block;
+	padding-top: 120px;
+	font-size: 15px;
+	color: #2466a8;
+	transition: 0.4s;
+}
+.index a:hover {
+	color: #4f94d8;
+}
+
+
+
+
+
+
+
+/* Zurück */
+.back {
+	background-color: transparent;
+	border: 2px solid #555;
+	border-radius: 12px;
+	padding: 4px 16px;
+	
+	color: #333;
+	font-weight: 600;
+
+	position: absolute;
+	top: 16px;
+	left: 16px;
+
+	transition: 0.4s;
+	cursor: pointer;
+
+}
+.back:hover {
+	background-color: rgb(232, 237, 240);
+	border: 2px solid #0F7FD5;
+	color: rgb(12, 116, 196);
+}
+
+
+button::selection {
+	background-color: transparent;
+}
+
+
+
+
+
+/* social */
+.row {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+/* social */
+.row a {
+	display: inline-block;
+}
+
+
